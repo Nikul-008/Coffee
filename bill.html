@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bill</title>
+    <link rel="stylesheet" href="Buy product detail.css">
+    
+</head>
+<body>
+    <div class="container">
+        <h1>Bill</h1>
+    </div>
+        <script>
+            // Get the product name and total bill from URL parameters
+            const urlParams = new URLSearchParams(window.location.search);
+            const productName = urlParams.get('productName');
+            const totalBill = parseFloat(urlParams.get('totalBill'));
+
+            // Display the product name and total bill on the page
+            document.body.innerHTML += `
+                <p>Product Name: ${productName}</p>
+                <p>Total Bill: Rs.${totalBill}</p>
+            `;
+        </script>
+        
+        <div class="index"><a href="index.html"><button type="button">GO TO HOME</button></a>
+        </div>
+</body>
+</html>

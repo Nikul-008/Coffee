@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop Now</title>
+    <link rel="stylesheet" href="shopnow.css">
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <div class="nav-bar">
+        <h1 class="title">Cof<span>fee</span></h1>
+        <p>Joshi's Coffee House</p>
+        <ul class="menu">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+            <li><a href="product.html">Product</a></li>
+            <li><a href="#">ABOUT</a></li>
+        </ul>
+    </div>
+
+    <!-- Coffee Items Section -->
+    <div class="container">
+        <div class="title">
+            <h1>Coffee Items</h1>
+        </div>
+        <table>
+            <tr>
+                <td id="t1">
+                    <img src="image/IMG-20240319-WA0009.jpg" alt="Cup Of Coffee Latte Leaf">
+                    <p>Cup Of Coffee Latte Leaf</p>
+                    <p>Rs.150</p>
+                    <a href="Buy Coffee Latte Leaf.html">
+                        <button type="button">Shop Now</button>
+                    </a>
+                </td>
+
+                <td id="t2">
+                    <img src="image/IMG-20240319-WA0002.jpg" alt="Mexican Coffee">
+                    <p>Mexican Coffee</p>
+                    <p>Rs.200</p>
+                    <a href="buy Mexican Coffee.html">
+                        <button type="button">Shop Now</button>
+                    </a>
+                </td>
+
+                <td id="t3">
+                    <img src="image/IMG-20240319-WA0008.jpg" alt="Americano">
+                    <p>Americano</p>
+                    <p>Rs.250</p>
+                    <a href="buy americano.html">
+                        <button type="button">Shop Now</button>
+                    </a>
+                </td>
+            </tr>
+
+            <tr>
+                <td id="t4">
+                    <img src="image/IMG-20240319-WA0003.jpg" alt="Mocha">
+                    <p>Mocha</p>
+                    <p>Rs.300</p>
+                    <a href="Buy mocho.html">
+                        <button type="button">Shop Now</button>
+                    </a>
+                </td>
+
+                <td id="t5">
+                    <img src="image/IMG-20240319-WA0005.jpg" alt="Cold Coffee With Ice Cream">
+                    <p>Cold Coffee With Ice Cream</p>
+                    <p>Rs.200</p>
+                    <a href="buy Cold Coffee With Icecream.html">
+                        <button type="button">Shop Now</button>
+                    </a>
+                </td>
+
+                <td id="t6">
+                    <img src="image/IMG-20240319-WA0004.jpg" alt="Irish Coffee">
+                    <p>Irish Coffee</p>
+                    <p>Rs.250</p>
+                    <a href="buy Irish Coffee.html">
+                        <button type="button">Shop Now</button>
+                    </a>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <script>
+        function redirectToBuyPage(productId) {
+            window.location.href = `buy.html?s=${productId}`;
+        }
+    </script>
+</body>
+
+</html>
